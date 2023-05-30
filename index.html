@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h1 id="text">yes</h1>
+    <script>
+      let mainTitle = document.getElementById("text");
+      mainTitle.style.backgroundColor = "red";
+      const textContent = () => {
+        if (mainTitle.style.backgroundColor === "red") {
+          mainTitle.style.backgroundColor = "blue ";
+          mainTitle.style.fontSize = "30px";
+        } else {
+          mainTitle.style.backgroundColor = "red";
+          mainTitle.style.fontSize = "40px";
+        }
+      };
+      mainTitle.addEventListener("click", () => {
+        textContent();
+      });
+    </script>
+  </body>
+</html>
